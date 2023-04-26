@@ -36,37 +36,37 @@ private extension ViewController {
         CoreDataService.shared.delete(type: TestManagedObject.self)
         CoreDataService.shared.delete(type: EncryptedDataMO.self)
 
-//        CoreDataService.shared.create {
-//            let newTestManagedObject1 = CoreDataMOFactory.create(type: TestManagedObject.self)
-//            newTestManagedObject1.property1 = 111
-//            newTestManagedObject1.property2 = "test_managed_object_1"
-//
-//            let newTestManagedObject2 = CoreDataMOFactory.create(type: TestManagedObject.self)
-//            newTestManagedObject2.property1 = 222
-//            newTestManagedObject2.property2 = "test_managed_object_2"
-//
-//            let newTestManagedObject3 = CoreDataMOFactory.create(type: TestManagedObject.self)
-//            newTestManagedObject3.property1 = 333
-//            newTestManagedObject3.property2 = "test_managed_object_3"
-//
-//            let newTestManagedObject4 = CoreDataMOFactory.create(type: TestManagedObject.self)
-//            newTestManagedObject4.property1 = 444
-//            newTestManagedObject4.property2 = "test_managed_object_4"
-//
-//            let newTestManagedObject5 = CoreDataMOFactory.create(type: TestManagedObject.self)
-//            newTestManagedObject5.property1 = 555
-//            newTestManagedObject5.property2 = "test_managed_object_5"
-//        }
-//
-//        CoreDataService.shared.read(type: TestManagedObject.self) { result in
-//            print("\n")
-//            print("------- CoreData -------")
-//
-//            result.forEach { testManagedObject in
-//                print(testManagedObject.property1)
-//                print(testManagedObject.property2 ?? "")
-//            }
-//        }
+        CoreDataService.shared.create {
+            let newTestManagedObject1 = CoreDataMOFactory.create(type: TestManagedObject.self)
+            newTestManagedObject1.property1 = 111
+            newTestManagedObject1.property2 = "test_managed_object_1"
+
+            let newTestManagedObject2 = CoreDataMOFactory.create(type: TestManagedObject.self)
+            newTestManagedObject2.property1 = 222
+            newTestManagedObject2.property2 = "test_managed_object_2"
+
+            let newTestManagedObject3 = CoreDataMOFactory.create(type: TestManagedObject.self)
+            newTestManagedObject3.property1 = 333
+            newTestManagedObject3.property2 = "test_managed_object_3"
+
+            let newTestManagedObject4 = CoreDataMOFactory.create(type: TestManagedObject.self)
+            newTestManagedObject4.property1 = 444
+            newTestManagedObject4.property2 = "test_managed_object_4"
+
+            let newTestManagedObject5 = CoreDataMOFactory.create(type: TestManagedObject.self)
+            newTestManagedObject5.property1 = 555
+            newTestManagedObject5.property2 = "test_managed_object_5"
+        }
+
+        CoreDataService.shared.read(type: TestManagedObject.self) { result in
+            print("\n")
+            print("------- CoreData -------")
+
+            result.forEach { testManagedObject in
+                print(testManagedObject.property1)
+                print(testManagedObject.property2 ?? "")
+            }
+        }
 
         CoreDataService.shared.create { [weak self] in
             guard let self else {
@@ -141,8 +141,8 @@ private extension ViewController {
             if KeychainService.shared.saveDataToKeychain(data: data, forKey: testObjectKey) {
                 if let data: Data = KeychainService.shared.getDataFromKeychain(forKey: testObjectKey),
                    let testObject = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data) as? TestObject {
-//                    print(testObject.property1)
-//                    print(testObject.property2)
+                    print(testObject.property1)
+                    print(testObject.property2)
                 }
             }
         } catch let error {

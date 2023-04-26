@@ -15,7 +15,6 @@
 		AF5D907C29F859B3009F272A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5D907A29F859B3009F272A /* LaunchScreen.storyboard */; };
 		AF5D908429F859C6009F272A /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D908329F859C6009F272A /* KeychainService.swift */; };
 		AF5D908729F861D0009F272A /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D908629F861D0009F272A /* TestObject.swift */; };
-		AF5D908B29F86C22009F272A /* Documentation.md in Resources */ = {isa = PBXBuildFile; fileRef = AF5D908A29F86C22009F272A /* Documentation.md */; };
 		AF5D908D29F86CCB009F272A /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D908C29F86CCB009F272A /* CoreDataService.swift */; };
 		AF5D909229F87000009F272A /* DatabaseModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF5D909029F87000009F272A /* DatabaseModel.xcdatamodeld */; };
 		AF5D909429F876D6009F272A /* CoreDataMOFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D909329F876D6009F272A /* CoreDataMOFactory.swift */; };
@@ -35,7 +34,6 @@
 		AF5D907D29F859B3009F272A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF5D908329F859C6009F272A /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		AF5D908629F861D0009F272A /* TestObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestObject.swift; sourceTree = "<group>"; };
-		AF5D908A29F86C22009F272A /* Documentation.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Documentation.md; sourceTree = "<group>"; };
 		AF5D908C29F86CCB009F272A /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		AF5D909129F87000009F272A /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		AF5D909329F876D6009F272A /* CoreDataMOFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataMOFactory.swift; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 		AF5D908529F859F7009F272A /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				AF5D908A29F86C22009F272A /* Documentation.md */,
 				AF5D907329F859B3009F272A /* ViewController.swift */,
 				AF5D908E29F86CD6009F272A /* Services */,
 				AF5D908F29F86CF5009F272A /* TestData */,
@@ -217,7 +214,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF5D908B29F86C22009F272A /* Documentation.md in Resources */,
 				AF5D907C29F859B3009F272A /* LaunchScreen.storyboard in Resources */,
 				AF5D907929F859B3009F272A /* Assets.xcassets in Resources */,
 			);
