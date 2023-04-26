@@ -1,0 +1,8 @@
+platform :ios, '16.0'
+
+target 'SecurityCheck' do
+  use_frameworks!
+
+  pod 'CryptoSwift', '~> 1.7.1'
+
+end

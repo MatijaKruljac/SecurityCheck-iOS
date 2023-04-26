@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22E261" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="EncryptedDataMO" representedClassName="EncryptedDataMO" syncable="YES" codeGenerationType="class">
+        <attribute name="data" optional="YES" attributeType="Binary"/>
+    </entity>
+    <entity name="TestManagedObject" representedClassName="TestManagedObject" syncable="YES" codeGenerationType="class">
+        <attribute name="property1" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="property2" optional="YES" attributeType="String"/>
+    </entity>
+</model>
