@@ -111,7 +111,7 @@
 			children = (
 				AF5D909529F87717009F272A /* CoreData */,
 				AF5D909629F87729009F272A /* Keychain */,
-				AF5D909729F8A173009F272A /* LocalFile */,
+				AF5D909729F8A173009F272A /* FileLevel */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -141,12 +141,12 @@
 			path = Keychain;
 			sourceTree = "<group>";
 		};
-		AF5D909729F8A173009F272A /* LocalFile */ = {
+		AF5D909729F8A173009F272A /* FileLevel */ = {
 			isa = PBXGroup;
 			children = (
 				AF5D909829F8A19C009F272A /* FileLevelService.swift */,
 			);
-			path = LocalFile;
+			path = FileLevel;
 			sourceTree = "<group>";
 		};
 		CD415AA7E7A98B4C2B3FD0DB /* Frameworks */ = {
